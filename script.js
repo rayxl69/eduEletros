@@ -21,8 +21,8 @@ b1.addEventListener('click', () => {
     img.alt = "teclado";
     let p = document.createElement('p');
     p.textContent = "Teclado R$79,99"
-    let div2 = document.createElement('div');
-    div2.id = "check";
+    /*let div2 = document.createElement('div');
+    div2.id = "check";*/
     let input = document.createElement('input');
     input.type = "checkbox";
     input.classList.add('color');
@@ -33,7 +33,7 @@ b1.addEventListener('click', () => {
     li.appendChild(div2);*/
     li.appendChild(img);
     li.appendChild(p);
-    li.appendChild(div2)
+    li.appendChild(input)
     lista_compras.appendChild(li);
 })
 
