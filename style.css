@@ -1,0 +1,833 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: auto;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+
+
+
+
+/* TOPO DO SITE */
+
+header {
+    width: 100%;
+    padding: 1.5vh 0;
+    background-color: yellow;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    position: fixed;
+    top: 0;
+    z-index: 3;
+}
+
+header .logo p {
+    font-weight: bold;
+    font-size: 30px;
+    font-family: "Poetsen One", sans-serif;
+}
+
+header .kart {
+    padding: 3vh 3vw;
+    /* background-color: aliceblue; */
+    /* cursor: pointer; */
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+header .kart i {
+   font-size: 25px;
+   cursor: pointer;
+}
+
+header .kart .info {
+    position: absolute;
+    left: 65%;
+    top: 10%;
+}
+
+header .kart .info p {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+header .kart #menu-compras {
+    display: none;
+    position: absolute;
+    right: -1%;
+    top: 95%;
+    /* transform: translateX(-50%); */
+    height: 400px;
+    width: 400px;
+    background-color: #f1ecec;
+    border-radius: 10px;
+    overflow: auto;
+}
+
+header .kart #menu-compras.open {
+    display: block;
+    z-index: 3;
+}
+
+header .kart #menu-compras #icones {
+    width: 100%;
+    height: 80px;
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 3px solid white;
+    /* gap: 12vw; */
+}
+
+header .kart #menu-compras .lista-compras {
+    width: 100%;
+    height: auto;
+    margin-top: 17px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5vw;
+}
+
+header .kart #menu-compras .lista-compras li {
+    width: 80%;
+    /* margin: 0 20px 0 20px; */
+    height: 80px;
+    display: flex;
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 8px;
+}
+
+header .kart #menu-compras .lista-compras li #box-li {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3vw;
+    /* background-color: red; */
+}
+
+header .kart #menu-compras .lista-compras li #box-li img {
+    width: 80px;
+    height: 60px;
+    border-radius: 8px 10% 10% 8px;
+    border-right: 2px solid black;
+}
+
+header .kart #menu-compras .lista-compras li #box-li p {
+    font-size: 1.2em;
+    font-weight: bold;
+    font-family: "Poetsen One", sans-serif;
+}
+
+header .kart #menu-compras .lista-compras li #check {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#check *,input[type="checkbox"] {
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+}
+
+#remover-itens, #comprar-itens, #marcar-checks {
+    cursor: pointer;
+}
+
+.msg-info {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    font-weight: bold;
+    font-family: "Poetsen One", sans-serif;
+    text-align: center;
+    font-size: 1.5em;
+    padding: 4vh 4vw;
+    background-color: transparent;
+    border-radius: 10px;
+    transition: all .5s ease;
+}
+
+.msg-info.green {
+    opacity: 1;
+    background-color: rgb(139, 216, 139);
+    /* transition: all 1s ease; */
+}
+
+.msg-info.red {
+    opacity: 1;
+    background-color: rgb(189, 100, 100);
+    /* transition: all 1s ease; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CATÁLOGO DE COMPRAS */
+
+main {
+    /* position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    height: auto;
+    width: 70vw;
+    margin: 19vh auto 13vh auto;
+    padding: 3vh 0;
+    border-radius: 12px;
+    box-shadow: 0 0 10px black;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 6vw;
+}
+
+#titulo h3 {
+    text-shadow: 0 0 1px black;
+    font-size: 40px;
+    font-family: "Poetsen One", sans-serif;
+    /* background: linear-gradient(to right, black, yellow);
+    color: transparent;
+    background-clip: text; */
+    font-weight: bold;
+    text-align: center;
+}
+
+
+main ul {
+    list-style: none;
+    padding: 0 5vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    gap: 35px;
+}
+
+main ul li {
+    width: 300px;
+    height: 300px;
+    border: 3.5px solid black;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+main ul li #options{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+main ul li span:nth-child(1) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right, transparent, #ff0);
+    width: 100%;
+    height: 3px;
+    animation: animar1 2s linear infinite;
+}
+
+@keyframes animar1 {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+
+
+
+
+main ul li span:nth-child(2) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: linear-gradient(to bottom, transparent, #ff0);
+    width: 3px;
+    height: 100%;
+    animation: animar2 2s linear infinite;
+    animation-delay: 1s;
+}
+
+@keyframes animar2 {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(100%);
+    }
+}
+
+
+
+
+
+
+main ul li span:nth-child(3) {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(to left, transparent, #ff0);
+    width: 100%;
+    height: 3px;
+    animation: animar3 2s linear infinite;
+} 
+
+@keyframes animar3 {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+
+
+
+
+
+main ul li span:nth-child(4) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to top, transparent, #ff0);
+    width: 3px;
+    height: 100%;
+    animation: animar4 2s linear infinite;
+    animation-delay: 1s;
+}
+
+@keyframes animar4 {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+
+
+
+
+
+
+main ul li #options img {
+    margin: 1px 1vh 0 1vh;
+    width: 100%;
+    border-radius: 5px 5px 20% 20%;
+    border-bottom: 2.5px solid white;
+    height: 48%;
+    background-size: cover;
+}
+
+main ul li #options p {
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+    font-family: "Poetsen One", sans-serif;
+}
+
+main ul li #options button {
+    margin: 0 auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5vw;
+    /* gap: 2vw; */
+    /* padding: .5vh 2vw; */
+    height: 40px;
+    width: 80%;
+    border-radius: 9px;
+    background-color: blue;
+    cursor: pointer;
+}
+
+main ul li #options button * {
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+main ul li #options button i {
+    font-size: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* RODAPÉ DP SITE */
+
+footer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+    width: 100vw;
+    height: 100px;
+    background-color: #ff0;
+    padding: 10vh 0;
+    border-radius: 10px 10px 0 0;
+}
+    
+footer .imagem img {
+    width: 100%;
+    height: 50px;
+    transform: rotate(180deg);
+    position: absolute;
+    top: -15px;
+    left: 0;
+}
+
+footer .rodape ul {
+    margin: 3vh 0 0 0;
+    list-style: none;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5px;
+}
+
+footer .rodape ul li a{
+    text-decoration: none;
+}
+
+footer .rodape ul li a i {
+    font-size: 40px;
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 480px) {
+
+    header .kart .info {
+        left: 85%;
+        top: 5%;
+    }
+
+    header .kart #menu-compras {
+        height: 265px;
+        width: 215px;
+    }
+
+    header .kart #menu-compras .lista-compras {
+        gap: 1.5vh;
+    }
+
+    header .kart #menu-compras .lista-compras li {
+        width: 95%;
+        height: 65px;
+    }
+
+    header .kart #menu-compras .lista-compras li #box-li p {
+        font-size: 12px;
+    }
+
+    #check *, input[type="checkbox"] {
+        height: 12px;
+        width: 12px;
+    }
+
+    main {
+        width: 90vw;
+        gap: 8vh;
+    }
+
+    #titulo h3 {
+        font-size: 22px;
+    }
+
+    main ul {
+        gap: 15px;
+    }
+
+    main ul li {
+        max-width: 35vw;
+        height: 160px;
+    }
+
+    main ul li #options img {
+        height: 43%;
+    }
+
+    main ul li #options p {
+        font-size: 11.5px;
+    }
+
+    main ul li #options button {
+        width: 90%;
+        height: 28.5px;
+        justify-content: center;
+        gap: 2.5vw;
+        margin-top: 0;
+    }
+
+    main ul li #options button p {
+        font-size: 7.5px;
+    }
+
+    main ul li #options button i {
+        font-size: 15px;
+        margin-left: 2vw;
+    }
+
+    footer .rodape ul li a i {
+        font-size: 30px;
+    }
+
+}
+
+
+
+
+@media (min-width: 481px) and (max-width: 768px) {
+
+    header .kart .info {
+        left: 80%;
+        top: 5%;
+    }
+
+    header .kart #menu-compras {
+        height: 295px;
+        width: 275px;
+    }
+
+    header .kart #menu-compras .lista-compras {
+        gap: 1.5vh;
+    }
+
+    header .kart #menu-compras .lista-compras li {
+        width: 95%;
+        height: 65px;
+    }
+
+    header .kart #menu-compras .lista-compras li #box-li p {
+        font-size: 12px;
+    }
+
+    #check *, input[type="checkbox"] {
+        height: 12px;
+        width: 12px;
+    }
+
+    main {
+        width: 90vw;
+        gap: 5vh;
+        margin-top: 16.5vh;
+    }
+
+    #titulo h3 {
+        font-size: 22px;
+    }
+
+    main ul {
+        gap: 15px;
+    }
+
+    main ul li {
+        max-width: 35vw;
+        height: 190px;
+    }
+
+    main ul li #options img {
+        height: 43%;
+    }
+
+    main ul li #options p {
+        font-size: 15.5px;
+    }
+
+    main ul li #options button {
+        width: 90%;
+        height: 28.5px;
+        justify-content: center;
+        gap: 2.5vw;
+        margin-top: 0;
+    }
+
+    main ul li #options button p {
+        font-size: 11px;
+    }
+
+    main ul li #options button i {
+        font-size: 15px;
+        margin-left: 2vw;
+    }
+
+    footer .rodape ul li a i {
+        font-size: 30px;
+    }
+
+}
+
+
+
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    header .kart .info {
+        left: 75%;
+        top: 5%;
+    }
+
+    header .kart #menu-compras {
+        height: 295px;
+        width: 275px;
+    }
+
+    header .kart #menu-compras .lista-compras {
+        gap: 1.5vh;
+    }
+
+    header .kart #menu-compras .lista-compras li {
+        width: 95%;
+        height: 65px;
+    }
+
+    header .kart #menu-compras .lista-compras li #box-li p {
+        font-size: 12px;
+    }
+
+    #check *, input[type="checkbox"] {
+        height: 12px;
+        width: 12px;
+    }
+
+    main {
+        width: 75vw;
+        gap: 7.5vh;
+        margin-top: 16.5vh;
+    }
+
+    #titulo h3 {
+        font-size: 26px;
+    }
+
+    main ul {
+        gap: 15px;
+    }
+
+    main ul li {
+        max-width: 35vw;
+        height: 270px;
+    }
+
+    main ul li #options img {
+        height: 43%;
+    }
+
+    main ul li #options p {
+        font-size: 15.5px;
+    }
+
+    main ul li #options button {
+        padding: 3.5vh 2vw;
+        width: 90%;
+        height: 28.5px;
+        justify-content: center;
+        gap: 2.5vw;
+        margin-top: 0;
+    }
+
+    main ul li #options button p {
+        font-size: 11px;
+    }
+
+    main ul li #options button i {
+        font-size: 15px;
+        margin-left: 2vw;
+    }
+
+    footer .rodape ul li a i {
+        font-size: 30px;
+    }
+
+}
+
+
+
+
+@media (min-width: 1025px) {
+
+    header .kart .info {
+        left: 75%;
+        top: 5%;
+    }
+
+    header .kart #menu-compras {
+        height: 295px;
+        width: 275px;
+    }
+
+    header .kart #menu-compras .lista-compras {
+        gap: 1.5vh;
+    }
+
+    header .kart #menu-compras .lista-compras li {
+        width: 95%;
+        height: 65px;
+    }
+
+    header .kart #menu-compras .lista-compras li #box-li p {
+        font-size: 12px;
+    }
+
+    #check *, input[type="checkbox"] {
+        height: 12px;
+        width: 12px;
+    }
+
+    main {
+        width: 75vw;
+        gap: 8vh;
+        margin-top: 16.5vh;
+    }
+
+    #titulo h3 {
+        font-size: 1.7em;
+    }
+
+    main ul {
+        gap: 15px;
+    }
+
+    main ul li {
+        max-width: 35vw;
+        height: 290px;
+    }
+
+    main ul li #options img {
+        height: 43%;
+    }
+
+    main ul li #options p {
+        font-size: 15.5px;
+    }
+
+    main ul li #options button {
+        padding: 3.5vh 2vw;
+        width: 90%;
+        height: 28.5px;
+        justify-content: center;
+        gap: 2.5vw;
+        margin-top: 0;
+    }
+
+    main ul li #options button p {
+        font-size: 11px;
+    }
+
+    main ul li #options button i {
+        font-size: 15px;
+        margin-left: 2vw;
+    }
+
+    footer .rodape ul li a i {
+        font-size: 30px;
+    }
+
+}
