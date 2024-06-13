@@ -525,7 +525,7 @@ footer .rodape ul li a i {
         height: 65px;
     }
 
-    header .kart #menu-compras .lista-compras li #box-li p {
+    header .kart #menu-compras .lista-compras li /*#box-li*/ p {
         font-size: 12px;
     }
 
