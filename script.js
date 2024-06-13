@@ -69,23 +69,24 @@ let b3 = document.querySelector('#btn3');
 b3.addEventListener('click', () => {
     let lista_compras = document.querySelector('.lista-compras');
     let li = document.createElement('li');
-    let div1 = document.createElement('div');
-    div1.id = "box-li";
+    /*let div1 = document.createElement('div');
+    div1.id = "box-li";*/
     let img = document.createElement('img');
     img.src = "./imagens/monitor-prime.jpg";
     img.alt = "monitor";
     let p = document.createElement('p');
     p.textContent = "Monitor R$119,99"
-    let div2 = document.createElement('div');
-    div2.id = "check";
+    /*let div2 = document.createElement('div');
+    div2.id = "check";*/
     let input = document.createElement('input');
     input.type = "checkbox";
     input.classList.add('color');
-    div1.appendChild(img);
+    /*div1.appendChild(img);
     div1.appendChild(p);
-    div2.appendChild(input);
-    li.appendChild(div1);
-    li.appendChild(div2);
+    div2.appendChild(input);*/
+    li.appendChild(img);
+    li.appendChild(p);
+    li.appendChild(input);
     lista_compras.appendChild(li);
 })
 
@@ -94,24 +95,25 @@ let b4 = document.querySelector('#btn4');
 b4.addEventListener('click', () => {
     let lista_compras = document.querySelector('.lista-compras');
     let li = document.createElement('li');
-    let div1 = document.createElement('div');
-    div1.id = "box-li";
+    /*let div1 = document.createElement('div');
+    div1.id = "box-li";*/
     let img = document.createElement('img');
     img.src = "./imagens/cabo-usb.jpg";
     img.alt = "cabo-usb";
     /*img.style.width = 85 + 'px';*/
     let p = document.createElement('p');
     p.textContent = "Cabo USB R$24,99"
-    let div2 = document.createElement('div');
-    div2.id = "check";
+    /*let div2 = document.createElement('div');
+    div2.id = "check";*/
     let input = document.createElement('input');
     input.type = "checkbox";
     input.classList.add('color');
-    div1.appendChild(img);
+    /*div1.appendChild(img);
     div1.appendChild(p);
-    div2.appendChild(input);
-    li.appendChild(div1);
-    li.appendChild(div2);
+    div2.appendChild(input);*/
+    li.appendChild(img);
+    li.appendChild(p);
+    li.appendChild(input);
     lista_compras.appendChild(li);
 })
 
