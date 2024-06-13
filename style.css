@@ -148,10 +148,17 @@ header .kart #menu-compras .lista-compras li #check {
     float: right;
 }
 
-#check *,input[type="checkbox"] {
+/*#check *,input[type="checkbox"] {
     cursor: pointer;
     height: 20px;
     width: 20px;
+}*/
+
+.color {
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
 }
 
 #remover-itens, #comprar-itens, #marcar-checks {
