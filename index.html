@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E. Eletros</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <p>E. Eletros</p>
+        </div>
+        <div class="kart">
+            <i class="bi bi-cart-fill" id="kart-icon"></i>
+            <div class="info">
+                <p id="contagem">0</p>
+            </div>
+            <div id="menu-compras">
+                <p class="msg-info"></p>
+                <div id="icones">
+                    <i class="bi bi-check2-square" id="marcar-checks"></i>
+                    <i class="bi bi-cart-dash-fill" id="remover-itens"></i>
+                    <i class="bi bi-cart-check-fill" id="comprar-itens"></i>
+                    <!-- <i class="bi bi-check-square"></i> -->
+                    <!-- <i class="bi bi-check-square-fill"></i> -->
+                </div>  
+                <ul class="lista-compras">
+                </ul>
+            </div>        
+        </div>
+    </header>
+
+    
+
+    <main>
+        <div id="titulo">
+            <h3>CATÁLOGO DE PRODUTOS</h3>
+        </div>
+        <ul id="catalogo">
+            <li class="card1">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <div id="options">
+                    <img src="./imagens/teclado.jpg" alt="teclado">
+                    <!-- <br> -->
+                    <p>Teclado <br> R$79,99</p>
+                    <!-- <br> -->
+                    <button id="btn1" class="btn" value="79.99">
+                        <i class="bi bi-cart"></i>
+                        <p>Adicionar ao carrinho</p>
+                    </button>
+                </div>
+                    <!-- <img src="./imagens/teclado.jpg" alt="teclado">
+                    <br>
+                    <span>Teclado <br> R$40,00</span>
+                    <br>
+                    <button id="btn1 btn">
+                        <i class="bi bi-cart"></i>
+                        <p>Adicionar ao carrinho</p>
+                    </button> -->
+            </li>
+            <li class="card2">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <div id="options">
+                    <img src="./imagens/mouse.jpg" alt="mouse">
+                    <p>Mouse <br> R$35,00</p>
+                    <button id="btn2" class="btn" value="35">
+                        <i class="bi bi-cart"></i>
+                        <p>Adicionar ao carrinho</p>
+                    </button>
+                </div>
+            </li>
+            <li class="card3">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <div id="options">
+                    <img src="./imagens/monitor-prime.jpg" alt="monitor">
+                    <p>Monitor <br> R$119,99</p>
+                    <button id="btn3" class="btn" value="119.99">
+                        <i class="bi bi-cart"></i>
+                        <p>Adicionar ao carrinho</p>
+                    </button>
+                </div>
+            </li>
+            <li class="card4">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <div id="options">
+                    <img src="./imagens/cabo-usb.jpg" alt="cabo-usb">
+                    <p>Cabo USB <br> R$24,99</p>
+                    <button id="btn4" class="btn" value="24.99">
+                        <i class="bi bi-cart"></i>
+                        <p>Adicionar ao carrinho</p>
+                    </button>
+                </div>
+            </li>
+        </ul>
+    </main>
+
+    <footer>
+        <div class="imagem">
+          <img src="./imagens/wave.png" />
+        </div>
+        <div class="rodape">
+           <ul> 
+             <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+             <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+             <li><a href="#"><i class="bi bi-tiktok"></i></a></li>
+             <li><a href="#"><i class="bi bi-whatsapp"></i></a></li>      
+           </ul>
+        </div>
+        
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
