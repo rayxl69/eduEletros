@@ -95,6 +95,7 @@ b4.addEventListener('click', () => {
     let img = document.createElement('img');
     img.src = "./imagens/cabo-usb.jpg";
     img.alt = "cabo-usb";
+    img.style.width = 100 + 'px';
     let p = document.createElement('p');
     p.textContent = "Cabo USB R$24,99"
     let div2 = document.createElement('div');
