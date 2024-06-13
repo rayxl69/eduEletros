@@ -109,6 +109,7 @@ header .kart #menu-compras .lista-compras li {
     /* margin: 0 20px 0 20px; */
     height: 80px;
     display: flex;
+    align-items: center;
     background-color: white;
     border: 3px solid black;
     border-radius: 8px;
@@ -125,7 +126,7 @@ header .kart #menu-compras .lista-compras li #box-li {
 }
 
 header .kart #menu-compras .lista-compras li /*#box-li*/ img {
-    width: 80px;
+    width: 55px;
     height: 60px;
     border-radius: 8px 10% 10% 8px;
     border-right: 2px solid black;
