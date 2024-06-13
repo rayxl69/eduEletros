@@ -43,23 +43,24 @@ let b2 = document.querySelector('#btn2');
 b2.addEventListener('click', () => {
     let lista_compras = document.querySelector('.lista-compras');
     let li = document.createElement('li');
-    let div1 = document.createElement('div');
-    div1.id = "box-li";
+    /*let div1 = document.createElement('div');
+    div1.id = "box-li";*/
     let img = document.createElement('img');
     img.src = "./imagens/mouse.jpg";
     img.alt = "mouse";
     let p = document.createElement('p');
     p.textContent = "Mouse R$35,00"
-    let div2 = document.createElement('div');
-    div2.id = "check";
+    /*let div2 = document.createElement('div');
+    div2.id = "check";*/
     let input = document.createElement('input');
     input.type = "checkbox";
     input.classList.add('color');
-    div1.appendChild(img);
+    /*div1.appendChild(img);
     div1.appendChild(p);
-    div2.appendChild(input);
-    li.appendChild(div1);
-    li.appendChild(div2);
+    div2.appendChild(input);*/
+    li.appendChild(img);
+    li.appendChild(p);
+    li.appendChild(input);
     lista_compras.appendChild(li);
 })
 
