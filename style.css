@@ -134,6 +134,7 @@ header .kart #menu-compras .lista-compras li #box-li p {
     font-size: 1.2em;
     font-weight: bold;
     font-family: "Poetsen One", sans-serif;
+    text-align: center;
 }
 
 header .kart #menu-compras .lista-compras li #check {
