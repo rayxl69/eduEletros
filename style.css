@@ -115,11 +115,12 @@ header .kart #menu-compras .lista-compras li {
 }
 
 header .kart #menu-compras .lista-compras li #box-li {
-    flex: 1;
+    float: left;
+    /*flex: 1;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2vw;
+    gap: 2vw;*/
     /* background-color: red; */
 }
 
@@ -138,10 +139,11 @@ header .kart #menu-compras .lista-compras li #box-li p {
 }
 
 header .kart #menu-compras .lista-compras li #check {
-    flex: 1;
+    /*flex: 1;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;*/
+    float: right;
 }
 
 #check *,input[type="checkbox"] {
