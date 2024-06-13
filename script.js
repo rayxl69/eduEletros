@@ -14,8 +14,8 @@ let b1 = document.querySelector('#btn1');
 b1.addEventListener('click', () => {
     let lista_compras = document.querySelector('.lista-compras');
     let li = document.createElement('li');
-    let div1 = document.createElement('div');
-    div1.id = "box-li";
+    /*let div1 = document.createElement('div');
+    div1.id = "box-li";*/
     let img = document.createElement('img');
     img.src = "./imagens/teclado.jpg";
     img.alt = "teclado";
@@ -26,11 +26,14 @@ b1.addEventListener('click', () => {
     let input = document.createElement('input');
     input.type = "checkbox";
     input.classList.add('color');
-    div1.appendChild(img);
+    /*div1.appendChild(img);
     div1.appendChild(p);
     div2.appendChild(input);
     li.appendChild(div1);
-    li.appendChild(div2);
+    li.appendChild(div2);*/
+    li.appendChild(img);
+    li.appendChild(p);
+    li.appendChild(div2)
     lista_compras.appendChild(li);
 })
 
