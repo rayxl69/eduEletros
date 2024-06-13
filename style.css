@@ -118,8 +118,8 @@ header .kart #menu-compras .lista-compras li #box-li {
     flex: 1;
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 3vw;
+    justify-content: space-around;
+    /*gap: 3vw;*/
     /* background-color: red; */
 }
 
