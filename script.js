@@ -108,7 +108,7 @@ b4.addEventListener('click', () => {
     let input = document.createElement('input');
     input.type = "checkbox";
     input.classList.add('color');
-    input.style.marginRight = 20 + 'px';
+    /*input.style.marginRight = 20 + 'px';*/
     /*div1.appendChild(img);
     div1.appendChild(p);
     div2.appendChild(input);*/
