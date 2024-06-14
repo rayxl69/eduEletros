@@ -124,14 +124,14 @@ setInterval(() => {
         check.addEventListener('click', () => {
             if (check.checked) {
                 let pai = check.parentElement;
-                let avo = pai.parentElement;
-                avo.classList.add('selected');
+                // let avo = pai.parentElement;
+                pai.classList.add('selected');
             }
 
             if (!check.checked) {
                 let pai = check.parentElement;
-                let avo = pai.parentElement;
-                avo.classList.remove('selected');        
+                // let avo = pai.parentElement;
+                pai.classList.remove('selected');        
             }
         })
     })
