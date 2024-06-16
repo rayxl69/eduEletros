@@ -1,6 +1,7 @@
 let contagem = document.querySelector('#contagem');
 let botoes = document.querySelectorAll('.btn');
 let cont = 0;
+let x = 0;
 
 botoes.forEach((el) => {
     el.addEventListener('click', () => {
@@ -270,6 +271,7 @@ btn_remover.addEventListener('click', () => {
         msg_info.classList.remove('red');
         msg_info.innerHTML = "";
     }, 2500)
+    x = 0;
 })
 
 let btn_comprar = document.querySelector('#comprar-itens');
@@ -293,10 +295,10 @@ btn_comprar.addEventListener('click', () => {
         msg_info.classList.remove('green');
         msg_info.innerHTML = "";
     }, 2500)
+    x = 0;
 })
 
 let btn_marcar = document.querySelector('#marcar-checks');
-let x = 0;
 btn_marcar.addEventListener('click', () => {
     let checkboxs = document.querySelectorAll('.color');
     if (x == 0) {
