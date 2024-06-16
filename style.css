@@ -308,6 +308,7 @@ main #box-ul {
 
 
 main #box-ul ul {
+    background-color: red;
     height: auto;
     width: 100%;
     position: absolute;
