@@ -124,13 +124,11 @@ setInterval(() => {
         check.addEventListener('click', () => {
             if (check.checked) {
                 let pai = check.parentElement;
-                // let avo = pai.parentElement;
                 pai.classList.add('selected');
             }
 
             if (!check.checked) {
                 let pai = check.parentElement;
-                // let avo = pai.parentElement;
                 pai.classList.remove('selected');        
             }
         })
@@ -193,16 +191,14 @@ btn_marcar.addEventListener('click', () => {
         checkboxs.forEach((check) => {
             check.checked = true;
             let pai = check.parentElement;
-            let avo = pai.parentElement;
-            avo.classList.add('selected');
+            pai.classList.add('selected');
         })
         x = 1;
     } else {
         checkboxs.forEach((check) => {
             check.checked = false;
             let pai = check.parentElement;
-            let avo = pai.parentElement;
-            avo.classList.remove('selected');
+            pai.classList.remove('selected');
         })
         x = 0;
     }
@@ -212,4 +208,50 @@ let kart = document.querySelector('#kart-icon');
 kart.addEventListener('click', () => {
     let menu_compras = document.querySelector('#menu-compras');
     menu_compras.classList.toggle('open');
+})
+
+let left = document.querySelector('#left');
+let right = document.querySelector('#right');
+let grids = document.querySelectorAll('.grids');
+
+
+
+
+let y = 0;
+
+
+right.addEventListener('click', () => {
+    if (y == 0) {
+    if (!right.classList.contains('back-gray')) {
+        right.classList.add('back-gray');
+        left.classList.remove('back-gray');
+    }
+
+    grids[0].classList.add('to-left');
+    grids[1].classList.add('to-center');
+
+    setTimeout(() => {
+        grids[0].classList.remove('to-center');
+        grids[1].classList.remove('to-right');
+    }, 500)
+    y = 1;
+    }
+})
+
+left.addEventListener('click', () => {
+    if (y == 1) {
+    if (!left.classList.contains('back-gray')) {
+        left.classList.add('back-gray');
+        right.classList.remove('back-gray');
+    }
+
+    grids[1].classList.add('to-right');
+    grids[0].classList.add('to-center');
+
+    setTimeout(() => {
+        grids[0].classList.remove('to-left');
+        grids[1].classList.remove('to-center');
+    }, 500)
+    y = 0;
+    }
 })
