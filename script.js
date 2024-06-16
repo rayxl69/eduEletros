@@ -118,6 +118,34 @@ b4.addEventListener('click', () => {
     lista_compras.appendChild(li);
 })
 
+let b5 = document.querySelector('#btn5');
+
+b5.addEventListener('click', () => {
+    let lista_compras = document.querySelector('.lista-compras');
+    let li = document.createElement('li');
+    /*let div1 = document.createElement('div');
+    div1.id = "box-li";*/
+    let img = document.createElement('img');
+    img.src = "./imagens/ip14.jpg";
+    img.alt = "ip 14";
+    let p = document.createElement('p');
+    p.textContent = "Iphone 14 R$3.799,99"
+    /*let div2 = document.createElement('div');
+    div2.id = "check";*/
+    let input = document.createElement('input');
+    input.type = "checkbox";
+    input.classList.add('color');
+    /*div1.appendChild(img);
+    div1.appendChild(p);
+    div2.appendChild(input);
+    li.appendChild(div1);
+    li.appendChild(div2);*/
+    li.appendChild(img);
+    li.appendChild(p);
+    li.appendChild(input)
+    lista_compras.appendChild(li);
+})
+
 setInterval(() => {
     let chec = document.querySelectorAll('.color');
     chec.forEach((check) => {
