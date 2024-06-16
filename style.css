@@ -21,7 +21,7 @@ body {
 
 header {
     width: 100%;
-    padding: 1.5vh 0;
+    padding: 1vh 0;
     background-color: yellow;
 
     display: flex;
@@ -35,7 +35,7 @@ header {
 
 header .logo p {
     font-weight: bold;
-    font-size: 30px;
+    font-size: 25px;
     font-family: "Poetsen One", sans-serif;
 }
 
@@ -49,7 +49,7 @@ header .kart {
 }
 
 header .kart i {
-   font-size: 25px;
+   font-size: 20px;
    cursor: pointer;
 }
 
@@ -61,7 +61,7 @@ header .kart .info {
 
 header .kart .info p {
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 15px;
 }
 
 header .kart #menu-compras {
@@ -103,6 +103,54 @@ header .kart #menu-compras .lista-compras {
     align-items: center;
     gap: 1.5vw;
 }
+
+/*header .kart #menu-compras .lista-compras li {
+    width: 80%;
+    height: 80px;
+    display: flex;
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 8px;
+}
+
+header .kart #menu-compras .lista-compras li #box-li {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3vw;
+    /* background-color: red; 
+}
+
+header .kart #menu-compras .lista-compras li #box-li img {
+    width: 80px;
+    height: 60px;
+    border-radius: 8px 10% 10% 8px;
+    border-right: 2px solid black;
+}
+
+header .kart #menu-compras .lista-compras li #box-li p {
+    font-size: 1.2em;
+    font-weight: bold;
+    font-family: "Poetsen One", sans-serif;
+}
+
+header .kart #menu-compras .lista-compras li #check {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#check *,input[type="checkbox"] {
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+}
+
+#remover-itens, #comprar-itens, #marcar-checks {
+    cursor: pointer;
+}*/
 
 header .kart #menu-compras .lista-compras li {
     width: 80%;
@@ -155,15 +203,13 @@ header .kart #menu-compras .lista-compras li #check {
 }*/
 
 .color {
+    float: right;
     cursor: pointer;
     height: 20px;
     width: 20px;
     margin-right: 10px;
 }
 
-#remover-itens, #comprar-itens, #marcar-checks {
-    cursor: pointer;
-}
 
 .msg-info {
     opacity: 0;
@@ -249,18 +295,33 @@ main {
     text-align: center;
 }
 
+main #box-ul {
+    height: 85vh;
+    min-width: 55vw;
+    overflow: hidden;
+    background-color: red;
+    /* display: flex;
+    justify-content: flex-start;
+    gap: 5vw; */
+    position: relative;
+}
 
-main ul {
+
+main #box-ul ul {
+    height: auto;
+    width: 100%;
+    position: absolute;
     list-style: none;
     padding: 0 5vw;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     place-items: center;
-    gap: 35px;
+    gap: 10px;
+    transition: transform .5s ease;
 }
 
-main ul li {
-    width: 300px;
+main #box-ul ul li {
+    max-width: 35vw;
     height: 300px;
     border: 3.5px solid black;
     border-radius: 5px;
@@ -268,7 +329,7 @@ main ul li {
     overflow: hidden;
 }
 
-main ul li #options{
+main #box-ul ul li #options{
     height: 100%;
     width: 100%;
     display: flex;
@@ -276,7 +337,46 @@ main ul li #options{
     justify-content: space-around;
 }
 
-main ul li span:nth-child(1) {
+
+.to-right {
+    transform: translateX(100%);
+}
+
+.to-center {
+    transform: translateX(0);
+}
+
+.to-left {
+    transform: translateX(-100%);
+}
+
+.from-right {
+    transform: translateX(100%);
+}
+
+.from-left {
+    transform: translateX(-100%);
+}
+
+.off-left {
+    transform: translateX(-100%);
+}
+
+.off-right {
+    transform: translateX(100%);
+}
+
+.novisible-left {
+    transform : translateX(-100%);
+}
+
+.novisible-right {
+    transform: translateX(100%);
+}
+
+
+
+main #box-ul ul li span:nth-child(1) {
     position: absolute;
     top: 0;
     left: 0;
@@ -299,7 +399,7 @@ main ul li span:nth-child(1) {
 
 
 
-main ul li span:nth-child(2) {
+main #box-ul ul li span:nth-child(2) {
     position: absolute;
     top: 0;
     right: 0;
@@ -324,7 +424,7 @@ main ul li span:nth-child(2) {
 
 
 
-main ul li span:nth-child(3) {
+main #box-ul ul li span:nth-child(3) {
     position: absolute;
     bottom: 0;
     right: 0;
@@ -349,7 +449,7 @@ main ul li span:nth-child(3) {
 
 
 
-main ul li span:nth-child(4) {
+main #box-ul ul li span:nth-child(4) {
     position: absolute;
     top: 0;
     left: 0;
@@ -375,7 +475,7 @@ main ul li span:nth-child(4) {
 
 
 
-main ul li #options img {
+main #box-ul ul li #options img {
     margin: 1px 1vh 0 1vh;
     width: 100%;
     border-radius: 5px 5px 20% 20%;
@@ -384,14 +484,14 @@ main ul li #options img {
     background-size: cover;
 }
 
-main ul li #options p {
+main #box-ul ul li #options p {
     text-align: center;
     font-weight: bold;
     font-size: 22px;
     font-family: "Poetsen One", sans-serif;
 }
 
-main ul li #options button {
+main #box-ul ul li #options button {
     margin: 0 auto 0 auto;
     display: flex;
     justify-content: space-between;
@@ -407,17 +507,41 @@ main ul li #options button {
     cursor: pointer;
 }
 
-main ul li #options button * {
+main #box-ul ul li #options button * {
     color: white;
     font-size: 1em;
     font-weight: bold;
 }
 
-main ul li #options button i {
+main #box-ul ul li #options button i {
     font-size: 25px;
 }
 
+#directions {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+}
 
+#directions button {
+    padding: 2.5vh 4vw;
+    background-color: #ff0;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 3px solid black; 
+}
+
+#directions button p {
+    font-weight: bold;
+}
+
+
+#directions #left.back-gray, #directions #right.back-gray {
+    background-color: gray;
+    cursor: auto;
+}
 
 
 
@@ -531,11 +655,15 @@ footer .rodape ul li a i {
 
     header .kart #menu-compras .lista-compras li {
         width: 95%;
-        height: 65px;
+        height: 50px;
     }
 
-    header .kart #menu-compras .lista-compras li /*#box-li*/ p {
-        font-size: 12px;
+    header .kart #menu-compras .lista-compras li p {
+        font-size: 17px;
+    }
+
+    header .kart #menu-compras .lista-compras li img {
+        height: 45px;
     }
 
     #check *, input[type="checkbox"] {
@@ -545,31 +673,36 @@ footer .rodape ul li a i {
 
     main {
         width: 90vw;
-        gap: 8vh;
+        gap: 4vh;
     }
 
     #titulo h3 {
-        font-size: 22px;
+        font-size: 18px;
     }
 
-    main ul {
-        gap: 15px;
+    main #box-ul {
+        height: 63vh;
+        width: 92vw;
     }
 
-    main ul li {
-        max-width: 35vw;
+    main #box-ul ul {
+        gap: 4px;
+    }
+
+    main #box-ul ul li {
+        max-width: 40vw;
         height: 160px;
     }
 
-    main ul li #options img {
+    main #box-ul ul li #options img {
         height: 43%;
     }
 
-    main ul li #options p {
+    main #box-ul ul li #options p {
         font-size: 11.5px;
     }
 
-    main ul li #options button {
+    main #box-ul ul li #options button {
         width: 90%;
         height: 28.5px;
         justify-content: center;
@@ -577,11 +710,11 @@ footer .rodape ul li a i {
         margin-top: 0;
     }
 
-    main ul li #options button p {
+    main #box-ul ul li #options button p {
         font-size: 7.5px;
     }
 
-    main ul li #options button i {
+    main #box-ul ul li #options button i {
         font-size: 15px;
         margin-left: 2vw;
     }
@@ -613,14 +746,18 @@ footer .rodape ul li a i {
 
     header .kart #menu-compras .lista-compras li {
         width: 95%;
-        height: 65px;
+        height: 50px;
     }
 
-    header .kart #menu-compras .lista-compras li #box-li p {
-        font-size: 12px;
+    header .kart #menu-compras .lista-compras li p {
+        font-size: 19px;
     }
 
-    #check *, input[type="checkbox"] {
+    header .kart #menu-compras .lista-compras li img {
+        height: 45px;
+    }
+
+    .color, input[type="checkbox"] {
         height: 12px;
         width: 12px;
     }
@@ -628,31 +765,37 @@ footer .rodape ul li a i {
     main {
         width: 90vw;
         gap: 5vh;
-        margin-top: 17.5vh;
+        margin-top: 16.5vh;
     }
 
     #titulo h3 {
         font-size: 22px;
     }
 
-    main ul {
+    main #box-ul {
+        height: 65vh;
+        width: 85vw;
+    }
+
+    main #box-ul ul {
         gap: 15px;
     }
 
-    main ul li {
-        max-width: 35vw;
-        height: 190px;
+    main #box-ul ul li {
+        /* max-width: 35vw; */
+        width: 80%;
+        height: 170px;
     }
 
-    main ul li #options img {
+    main #box-ul ul li #options img {
         height: 43%;
     }
 
-    main ul li #options p {
+    main #box-ul ul li #options p {
         font-size: 15.5px;
     }
 
-    main ul li #options button {
+    main #box-ul ul li #options button {
         width: 90%;
         height: 28.5px;
         justify-content: center;
@@ -660,11 +803,11 @@ footer .rodape ul li a i {
         margin-top: 0;
     }
 
-    main ul li #options button p {
+    main #box-ul ul li #options button p {
         font-size: 11px;
     }
 
-    main ul li #options button i {
+    main #box-ul ul li #options button i {
         font-size: 15px;
         margin-left: 2vw;
     }
@@ -711,7 +854,7 @@ footer .rodape ul li a i {
 
     main {
         width: 75vw;
-        gap: 7.5vh;
+        gap: 4vh;
         margin-top: 16.5vh;
     }
 
@@ -719,25 +862,29 @@ footer .rodape ul li a i {
         font-size: 26px;
     }
 
-    main ul {
+    main #box-ul {
+        height: 65vh;
+    }
+
+    main #box-ul ul {
         gap: 15px;
     }
 
-    main ul li {
+    main #box-ul ul li {
         max-width: 35vw;
-        height: 270px;
+        height: 168px;
     }
 
-    main ul li #options img {
+    main #box-ul ul li #options img {
         height: 43%;
     }
 
-    main ul li #options p {
+    main #box-ul ul li #options p {
         font-size: 15.5px;
     }
 
-    main ul li #options button {
-        padding: 3.5vh 2vw;
+    main #box-ul ul li #options button {
+        /* padding: 3.5vh 2vw; */
         width: 90%;
         height: 28.5px;
         justify-content: center;
@@ -745,11 +892,12 @@ footer .rodape ul li a i {
         margin-top: 0;
     }
 
-    main ul li #options button p {
-        font-size: 11px;
+    main #box-ul ul li #options button p {
+        font-size: 8px;
+        margin-right: 2vw;
     }
 
-    main ul li #options button i {
+    main #box-ul ul li #options button i {
         font-size: 15px;
         margin-left: 2vw;
     }
@@ -766,14 +914,14 @@ footer .rodape ul li a i {
 @media (min-width: 1025px) {
 
     header .kart .info {
-        left: 75%;
+        left: 65%;
         top: 5%;
     }
 
-    header .kart #menu-compras {
-        height: 295px;
-        width: 275px;
-    }
+    /*header .kart #menu-compras {
+        height: 400px;
+        width: 400px;
+    }*/
 
     header .kart #menu-compras .lista-compras {
         gap: 1.5vh;
@@ -794,52 +942,57 @@ footer .rodape ul li a i {
     }
 
     main {
-        width: 75vw;
-        gap: 8vh;
+        width: 60vw;
+        gap: 4vh;
         margin-top: 16.5vh;
     }
 
     #titulo h3 {
-        font-size: 1.7em;
+        font-size: 1.5em;
     }
 
-    main ul {
+    /* main #box-ul ul {
         gap: 15px;
+    } */
+
+    main #box-ul {
+        height: 72vh;
     }
 
-    main ul li {
-        max-width: 35vw;
-        height: 290px;
+    main #box-ul ul li {
+        width: 80%;
+        height: 175px;
+    } 
+
+    main #box-ul ul li #options img {
+        height: 48%;
     }
 
-    main ul li #options img {
-        height: 43%;
+    main #box-ul ul li #options p {
+        font-size: 15px;
     }
 
-    main ul li #options p {
-        font-size: 15.5px;
-    }
-
-    main ul li #options button {
-        padding: 3.5vh 2vw;
-        width: 90%;
-        height: 28.5px;
+    main #box-ul ul li #options button {
+        /* padding: 1.5vh 0; */
+        width: 72%;
+        height: 29px;
         justify-content: center;
         gap: 2.5vw;
         margin-top: 0;
     }
 
-    main ul li #options button p {
-        font-size: 11px;
+    main #box-ul ul li #options button p {
+        margin-right: 2vw;
+        font-size: 6.5px;
     }
 
-    main ul li #options button i {
+    main #box-ul ul li #options button i {
         font-size: 15px;
         margin-left: 2vw;
     }
 
     footer .rodape ul li a i {
-        font-size: 30px;
+        font-size: 40px;
     }
 
 }
