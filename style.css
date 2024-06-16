@@ -535,6 +535,7 @@ main #box-ul ul li #options button i {
 
 #directions button p {
     font-weight: bold;
+    color: black;
 }
 
 
@@ -681,7 +682,7 @@ footer .rodape ul li a i {
     }
 
     main #box-ul {
-        height: 63vh;
+        height: 55vh;
         width: 92vw;
     }
 
