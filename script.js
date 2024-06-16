@@ -245,8 +245,8 @@ left.addEventListener('click', () => {
         right.classList.remove('back-gray');
     }
 
-    grids[1].classList.add('to-right');
     grids[0].classList.add('to-center');
+    grids[1].classList.add('to-right');
 
     setTimeout(() => {
         grids[0].classList.remove('to-left');
