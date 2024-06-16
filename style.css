@@ -722,6 +722,10 @@ footer .rodape ul li a i {
         margin-left: 2vw;
     }
 
+    #directions {
+        margin-bottom: 5vh;
+    }
+
     footer .rodape ul li a i {
         font-size: 30px;
     }
