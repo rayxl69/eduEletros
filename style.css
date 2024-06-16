@@ -299,7 +299,7 @@ main #box-ul {
     height: 85vh;
     min-width: 55vw;
     overflow: hidden;
-    background-color: red;
+    /* background-color: red; */
     /* display: flex;
     justify-content: flex-start;
     gap: 5vw; */
