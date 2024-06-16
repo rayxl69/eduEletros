@@ -129,7 +129,91 @@ b5.addEventListener('click', () => {
     img.src = "./imagens/ip14.jpg";
     img.alt = "ip 14";
     let p = document.createElement('p');
-    p.textContent = "Iphone 14 R$3.799,99"
+    p.textContent = "Iphone 14 R$3.699,99"
+    /*let div2 = document.createElement('div');
+    div2.id = "check";*/
+    let input = document.createElement('input');
+    input.type = "checkbox";
+    input.classList.add('color');
+    /*div1.appendChild(img);
+    div1.appendChild(p);
+    div2.appendChild(input);
+    li.appendChild(div1);
+    li.appendChild(div2);*/
+    li.appendChild(img);
+    li.appendChild(p);
+    li.appendChild(input)
+    lista_compras.appendChild(li);
+})
+
+let b6 = document.querySelector('#btn6');
+
+b6.addEventListener('click', () => {
+    let lista_compras = document.querySelector('.lista-compras');
+    let li = document.createElement('li');
+    /*let div1 = document.createElement('div');
+    div1.id = "box-li";*/
+    let img = document.createElement('img');
+    img.src = "./imagens/tablet.jpg";
+    img.alt = "tablet";
+    let p = document.createElement('p');
+    p.textContent = "Tablet R$800,00"
+    /*let div2 = document.createElement('div');
+    div2.id = "check";*/
+    let input = document.createElement('input');
+    input.type = "checkbox";
+    input.classList.add('color');
+    /*div1.appendChild(img);
+    div1.appendChild(p);
+    div2.appendChild(input);
+    li.appendChild(div1);
+    li.appendChild(div2);*/
+    li.appendChild(img);
+    li.appendChild(p);
+    li.appendChild(input)
+    lista_compras.appendChild(li);
+})
+
+let b7 = document.querySelector('#btn7');
+
+b7.addEventListener('click', () => {
+    let lista_compras = document.querySelector('.lista-compras');
+    let li = document.createElement('li');
+    /*let div1 = document.createElement('div');
+    div1.id = "box-li";*/
+    let img = document.createElement('img');
+    img.src = "./imagens/notebook.jpg";
+    img.alt = "notebook";
+    let p = document.createElement('p');
+    p.textContent = "Notebook R$2.499,99"
+    /*let div2 = document.createElement('div');
+    div2.id = "check";*/
+    let input = document.createElement('input');
+    input.type = "checkbox";
+    input.classList.add('color');
+    /*div1.appendChild(img);
+    div1.appendChild(p);
+    div2.appendChild(input);
+    li.appendChild(div1);
+    li.appendChild(div2);*/
+    li.appendChild(img);
+    li.appendChild(p);
+    li.appendChild(input)
+    lista_compras.appendChild(li);
+})
+
+let b8 = document.querySelector('#btn8');
+
+b8.addEventListener('click', () => {
+    let lista_compras = document.querySelector('.lista-compras');
+    let li = document.createElement('li');
+    /*let div1 = document.createElement('div');
+    div1.id = "box-li";*/
+    let img = document.createElement('img');
+    img.src = "./imagens/camera.jpg";
+    img.alt = "camera";
+    let p = document.createElement('p');
+    p.textContent = "Câmera R$110,00"
     /*let div2 = document.createElement('div');
     div2.id = "check";*/
     let input = document.createElement('input');
