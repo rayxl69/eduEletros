@@ -336,6 +336,8 @@ let y = 0;
 
 right.addEventListener('click', () => {
     if (y == 0) {
+    grids[0].classList.remove('to-left');
+    grids[1].classList.remove('to-center');
     if (!right.classList.contains('back-gray')) {
         right.classList.add('back-gray');
         left.classList.remove('back-gray');
@@ -354,6 +356,8 @@ right.addEventListener('click', () => {
 
 left.addEventListener('click', () => {
     if (y == 1) {
+    grids[0].classList.remove('to-left');
+    grids[1].classList.remove('to-center');
     if (!left.classList.contains('back-gray')) {
         left.classList.add('back-gray');
         right.classList.remove('back-gray');
@@ -362,10 +366,10 @@ left.addEventListener('click', () => {
     grids[0].classList.add('to-center');
     grids[1].classList.add('to-right');
 
-    setTimeout(() => {
+    /*setTimeout(() => {
         grids[0].classList.remove('to-left');
         grids[1].classList.remove('to-center');
-    }, 500)
+    }, 500)*/
     y = 0;
     }
 })
