@@ -322,6 +322,8 @@ main #box-ul ul {
 }
 
 main #box-ul ul li {
+    justify-self: center;
+    align-self: center;
     max-width: 35vw;
     height: 300px;
     border: 3.5px solid black;
