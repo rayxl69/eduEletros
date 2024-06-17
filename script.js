@@ -202,7 +202,6 @@ btn_remover.addEventListener('click', () => {
     })
     setTimeout(() => {
         msg_info.classList.remove('red');
-        /*msg_info.innerHTML = "";*/
     }, 1500)
     setTimeout(() => {
         msg_info.innerHTML = "";
@@ -229,8 +228,10 @@ btn_comprar.addEventListener('click', () => {
     })
     setTimeout(() => {
         msg_info.classList.remove('green');
-        msg_info.innerHTML = "";
     }, 1500)
+    setTimeout(() => {
+        msg_info.innerHTML = "";
+    }, 2500)
     x = 0;
 })
 
