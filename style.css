@@ -612,7 +612,7 @@ footer .rodape ul li a i {
 
     #titulo h3 {
         font-size: 18px;
-        margin-top: 3vh;
+        margin-top: 6vh;
     }
 
     main #box-ul {
@@ -655,7 +655,7 @@ footer .rodape ul li a i {
     }
 
     #directions {
-        transform: translateY(-5%);
+        transform: translateY(-10%);
         margin-bottom: 4px;
     }
 
