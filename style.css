@@ -889,6 +889,7 @@ footer .rodape ul li a i {
 
     #titulo h3 {
         font-size: 1.5em;
+        margin-top: 4vh;
     }
 
     main #box-ul {
@@ -897,11 +898,11 @@ footer .rodape ul li a i {
 
     main #box-ul ul li {
         width: 80%;
-        height: 175px;
+        height: 225px;
     } 
 
     main #box-ul ul li #options img {
-        height: 48%;
+        height: 85%;
     }
 
     main #box-ul ul li #options p {
@@ -924,6 +925,10 @@ footer .rodape ul li a i {
     main #box-ul ul li #options button i {
         font-size: 15px;
         margin-left: 2vw;
+    }
+
+    #directions {
+        margin-bottom: 4vh;
     }
 
     footer .rodape ul li a i {
