@@ -206,7 +206,7 @@ btn_remover.addEventListener('click', () => {
     }, 1500)
     setTimeout(() => {
         msg_info.innerHTML = "";
-    })
+    }, 2500)
     x = 0;
 })
 
