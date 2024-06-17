@@ -827,7 +827,7 @@ footer .rodape ul li a i {
     }
 
     main #box-ul ul li #options p {
-        font-size: 15.5px;
+        font-size: 13px;
     }
 
     main #box-ul ul li #options button {
@@ -835,7 +835,7 @@ footer .rodape ul li a i {
         height: 28.5px;
         justify-content: center;
         gap: 2.5vw;
-        margin-top: 0;
+        margin-bottom: 5px;
     }
 
     main #box-ul ul li #options button p {
@@ -846,6 +846,10 @@ footer .rodape ul li a i {
     main #box-ul ul li #options button i {
         font-size: 15px;
         margin-left: 2vw;
+    }
+
+    #directions {
+        margin-bottom: 2vh;
     }
 
     footer .rodape ul li a i {
@@ -907,7 +911,7 @@ footer .rodape ul li a i {
     }
 
     main #box-ul ul li #options p {
-        font-size: 15px;
+        font-size: 13px;
     }
 
     main #box-ul ul li #options button {
@@ -915,7 +919,7 @@ footer .rodape ul li a i {
         height: 29px;
         justify-content: center;
         gap: 2.5vw;
-        margin-top: 0;
+        margin-bottom: 5px;
     }
 
     main #box-ul ul li #options button p {
