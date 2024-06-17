@@ -171,6 +171,7 @@ header .kart #menu-compras .lista-compras li #check {
 .msg-info.green {
     opacity: 1;
     background-color: rgb(139, 216, 139);
+    transition: all 1s ease;
 }
 
 .msg-info.red {
