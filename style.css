@@ -726,8 +726,8 @@ footer .rodape ul li a i {
     }
 
     main #box-ul ul li {
-        width: 80%;
-        height: 170px;
+        width: 90%;
+        height: 200px;
     }
 
     main #box-ul ul li #options img {
@@ -743,7 +743,7 @@ footer .rodape ul li a i {
         height: 28.5px;
         justify-content: center;
         gap: 2.5vw;
-        margin-bottom: 1vh;
+        margin-bottom: .5vh;
     }
 
     main #box-ul ul li #options button p {
