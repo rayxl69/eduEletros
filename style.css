@@ -415,8 +415,7 @@ main #box-ul ul li #options img {
     width: 100%;
     border-radius: 5px 5px 20% 20%;
     height: 60%;
-    object-fit: contain;
-    border: .5px solid white;
+    object-fit: cover;
 }
 
 main #box-ul ul li #options p {
@@ -633,8 +632,7 @@ footer .rodape ul li a i {
     }
 
     main #box-ul ul li #options img {
-        height: 50%;
-        width: 100%;
+        height: 50%;l
     }
 
     main #box-ul ul li #options p {
