@@ -417,7 +417,7 @@ main #box-ul ul li #options img {
     border-bottom: 2.5px solid white;
     height: 48%;
     /*background-size: cover;*/
-    object-fit: cover;
+    object-fit: contain;
 }
 
 main #box-ul ul li #options p {
