@@ -319,7 +319,7 @@ main #box-ul ul {
     grid-template-columns: repeat(2, 1fr);
     place-items: center;
     gap: 10px;
-    transition: transform .5s ease;
+    transition: left .5s ease;
 }
 
 main #box-ul ul li {
