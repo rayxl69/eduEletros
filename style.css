@@ -416,7 +416,8 @@ main #box-ul ul li #options img {
     border-radius: 5px 5px 20% 20%;
     border-bottom: 2.5px solid white;
     height: 48%;
-    background-size: cover;
+    /*background-size: cover;*/
+    object-fit: cover;
 }
 
 main #box-ul ul li #options p {
