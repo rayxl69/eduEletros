@@ -693,7 +693,7 @@ footer .rodape ul li a i {
     }
 
     main #box-ul ul li {
-        max-width: 40vw;
+        width: 40vw;
         height: 160px;
     }
 
