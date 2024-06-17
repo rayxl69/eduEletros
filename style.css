@@ -726,6 +726,7 @@ footer .rodape ul li a i {
 
     #directions {
         transform: translateY(-25%);
+        margin-bottom: 7px;
     }
 
     footer .rodape ul li a i {
