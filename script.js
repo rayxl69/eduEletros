@@ -15,23 +15,14 @@ let b1 = document.querySelector('#btn1');
 b1.addEventListener('click', () => {
     let lista_compras = document.querySelector('.lista-compras');
     let li = document.createElement('li');
-    /*let div1 = document.createElement('div');
-    div1.id = "box-li";*/
     let img = document.createElement('img');
     img.src = "./imagens/teclado.jpg";
     img.alt = "teclado";
     let p = document.createElement('p');
     p.textContent = "Teclado \n R$79,99"
-    /*let div2 = document.createElement('div');
-    div2.id = "check";*/
     let input = document.createElement('input');
     input.type = "checkbox";
     input.classList.add('color');
-    /*div1.appendChild(img);
-    div1.appendChild(p);
-    div2.appendChild(input);
-    li.appendChild(div1);
-    li.appendChild(div2);*/
     li.appendChild(img);
     li.appendChild(p);
     li.appendChild(input)
@@ -44,21 +35,14 @@ let b2 = document.querySelector('#btn2');
 b2.addEventListener('click', () => {
     let lista_compras = document.querySelector('.lista-compras');
     let li = document.createElement('li');
-    /*let div1 = document.createElement('div');
-    div1.id = "box-li";*/
     let img = document.createElement('img');
     img.src = "./imagens/mouse.jpg";
     img.alt = "mouse";
     let p = document.createElement('p');
     p.textContent = "Mouse \n R$35,00"
-    /*let div2 = document.createElement('div');
-    div2.id = "check";*/
     let input = document.createElement('input');
     input.type = "checkbox";
     input.classList.add('color');
-    /*div1.appendChild(img);
-    div1.appendChild(p);
-    div2.appendChild(input);*/
     li.appendChild(img);
     li.appendChild(p);
     li.appendChild(input);
@@ -70,21 +54,14 @@ let b3 = document.querySelector('#btn3');
 b3.addEventListener('click', () => {
     let lista_compras = document.querySelector('.lista-compras');
     let li = document.createElement('li');
-    /*let div1 = document.createElement('div');
-    div1.id = "box-li";*/
     let img = document.createElement('img');
     img.src = "./imagens/monitor-prime.jpg";
     img.alt = "monitor";
     let p = document.createElement('p');
     p.textContent = "Monitor \n R$119,99"
-    /*let div2 = document.createElement('div');
-    div2.id = "check";*/
     let input = document.createElement('input');
     input.type = "checkbox";
     input.classList.add('color');
-    /*div1.appendChild(img);
-    div1.appendChild(p);
-    div2.appendChild(input);*/
     li.appendChild(img);
     li.appendChild(p);
     li.appendChild(input);
@@ -96,23 +73,15 @@ let b4 = document.querySelector('#btn4');
 b4.addEventListener('click', () => {
     let lista_compras = document.querySelector('.lista-compras');
     let li = document.createElement('li');
-    /*let div1 = document.createElement('div');
-    div1.id = "box-li";*/
     let img = document.createElement('img');
     img.src = "./imagens/cabo-usb.jpg";
     img.alt = "cabo-usb";
     img.style.width = 90 + 'px';
     let p = document.createElement('p');
     p.textContent = "Cabo USB \n R$24,99"
-    /*let div2 = document.createElement('div');
-    div2.id = "check";*/
     let input = document.createElement('input');
     input.type = "checkbox";
     input.classList.add('color');
-    /*input.style.marginRight = 20 + 'px';*/
-    /*div1.appendChild(img);
-    div1.appendChild(p);
-    div2.appendChild(input);*/
     li.appendChild(img);
     li.appendChild(p);
     li.appendChild(input);
@@ -124,23 +93,14 @@ let b5 = document.querySelector('#btn5');
 b5.addEventListener('click', () => {
     let lista_compras = document.querySelector('.lista-compras');
     let li = document.createElement('li');
-    /*let div1 = document.createElement('div');
-    div1.id = "box-li";*/
     let img = document.createElement('img');
     img.src = "./imagens/ip14.jpg";
     img.alt = "ip 14";
     let p = document.createElement('p');
     p.textContent = "Iphone 14 \n R$3.699,99"
-    /*let div2 = document.createElement('div');
-    div2.id = "check";*/
     let input = document.createElement('input');
     input.type = "checkbox";
     input.classList.add('color');
-    /*div1.appendChild(img);
-    div1.appendChild(p);
-    div2.appendChild(input);
-    li.appendChild(div1);
-    li.appendChild(div2);*/
     li.appendChild(img);
     li.appendChild(p);
     li.appendChild(input)
@@ -152,23 +112,14 @@ let b6 = document.querySelector('#btn6');
 b6.addEventListener('click', () => {
     let lista_compras = document.querySelector('.lista-compras');
     let li = document.createElement('li');
-    /*let div1 = document.createElement('div');
-    div1.id = "box-li";*/
     let img = document.createElement('img');
     img.src = "./imagens/tablet.jpg";
     img.alt = "tablet";
     let p = document.createElement('p');
     p.textContent = "Tablet \n R$800,00"
-    /*let div2 = document.createElement('div');
-    div2.id = "check";*/
     let input = document.createElement('input');
     input.type = "checkbox";
     input.classList.add('color');
-    /*div1.appendChild(img);
-    div1.appendChild(p);
-    div2.appendChild(input);
-    li.appendChild(div1);
-    li.appendChild(div2);*/
     li.appendChild(img);
     li.appendChild(p);
     li.appendChild(input)
@@ -180,23 +131,14 @@ let b7 = document.querySelector('#btn7');
 b7.addEventListener('click', () => {
     let lista_compras = document.querySelector('.lista-compras');
     let li = document.createElement('li');
-    /*let div1 = document.createElement('div');
-    div1.id = "box-li";*/
     let img = document.createElement('img');
     img.src = "./imagens/notebook.jpg";
     img.alt = "notebook";
     let p = document.createElement('p');
     p.textContent = "Notebook \n R$2.499,99"
-    /*let div2 = document.createElement('div');
-    div2.id = "check";*/
     let input = document.createElement('input');
     input.type = "checkbox";
     input.classList.add('color');
-    /*div1.appendChild(img);
-    div1.appendChild(p);
-    div2.appendChild(input);
-    li.appendChild(div1);
-    li.appendChild(div2);*/
     li.appendChild(img);
     li.appendChild(p);
     li.appendChild(input)
@@ -208,23 +150,14 @@ let b8 = document.querySelector('#btn8');
 b8.addEventListener('click', () => {
     let lista_compras = document.querySelector('.lista-compras');
     let li = document.createElement('li');
-    /*let div1 = document.createElement('div');
-    div1.id = "box-li";*/
     let img = document.createElement('img');
     img.src = "./imagens/camera.jpg";
     img.alt = "camera";
     let p = document.createElement('p');
     p.textContent = "Câmera \n R$110,00"
-    /*let div2 = document.createElement('div');
-    div2.id = "check";*/
     let input = document.createElement('input');
     input.type = "checkbox";
     input.classList.add('color');
-    /*div1.appendChild(img);
-    div1.appendChild(p);
-    div2.appendChild(input);
-    li.appendChild(div1);
-    li.appendChild(div2);*/
     li.appendChild(img);
     li.appendChild(p);
     li.appendChild(input)
@@ -366,10 +299,6 @@ left.addEventListener('click', () => {
     grids[0].classList.add('to-center');
     grids[1].classList.add('to-right');
 
-    /*setTimeout(() => {
-        grids[0].classList.remove('to-left');
-        grids[1].classList.remove('to-center');
-    }, 500)*/
     y = 0;
     }
 })
