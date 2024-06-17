@@ -183,6 +183,10 @@ setInterval(() => {
 
 let msg_info = document.querySelector('.msg-info');
 
+msg_info.addEventListener('click', () => {
+    this.style.opacity = 0;
+});
+
 let btn_remover = document.querySelector('#remover-itens');
 btn_remover.addEventListener('click', () => {
     let lista_itens = document.querySelectorAll('.selected');
