@@ -231,7 +231,8 @@ main {
 main #box-ul {
     height: 85vh;
     min-width: 55vw;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
     position: relative;
 }
 
