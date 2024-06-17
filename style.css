@@ -633,7 +633,8 @@ footer .rodape ul li a i {
     }
 
     main #box-ul ul li #options img {
-        height: 55%;
+        height: 50%;
+        width: 100%;
     }
 
     main #box-ul ul li #options p {
