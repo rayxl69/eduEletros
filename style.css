@@ -415,7 +415,7 @@ main #box-ul ul li #options img {
     width: 100%;
     border-radius: 5px 5px 20% 20%;
     height: 60%;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 main #box-ul ul li #options p {
