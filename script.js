@@ -203,7 +203,7 @@ btn_remover.addEventListener('click', () => {
     setTimeout(() => {
         msg_info.classList.remove('red');
         msg_info.innerHTML = "";
-    }, 2500)
+    }, 1500)
     x = 0;
 })
 
@@ -227,7 +227,7 @@ btn_comprar.addEventListener('click', () => {
     setTimeout(() => {
         msg_info.classList.remove('green');
         msg_info.innerHTML = "";
-    }, 2500)
+    }, 1500)
     x = 0;
 })
 
