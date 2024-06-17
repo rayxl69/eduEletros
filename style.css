@@ -675,6 +675,7 @@ footer .rodape ul li a i {
     }
 
     main {
+        margin-top: 8vh;
         width: 90vw;
         gap: 1vh;
     }
