@@ -41,8 +41,6 @@ header .logo p {
 
 header .kart {
     padding: 3vh 3vw;
-    /* background-color: aliceblue; */
-    /* cursor: pointer; */
     position: relative;
     display: flex;
     align-items: center;
@@ -69,7 +67,6 @@ header .kart #menu-compras {
     position: absolute;
     right: -1%;
     top: 95%;
-    /* transform: translateX(-50%); */
     height: 400px;
     width: 400px;
     background-color: #f1ecec;
@@ -85,12 +82,10 @@ header .kart #menu-compras.open {
 header .kart #menu-compras #icones {
     width: 100%;
     height: 80px;
-    /* background-color: aquamarine; */
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     border-bottom: 3px solid white;
-    /* gap: 12vw; */
 }
 
 header .kart #menu-compras .lista-compras {
@@ -104,57 +99,8 @@ header .kart #menu-compras .lista-compras {
     gap: 1.5vw;
 }
 
-/*header .kart #menu-compras .lista-compras li {
-    width: 80%;
-    height: 80px;
-    display: flex;
-    background-color: white;
-    border: 3px solid black;
-    border-radius: 8px;
-}
-
-header .kart #menu-compras .lista-compras li #box-li {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 3vw;
-    /* background-color: red; 
-}
-
-header .kart #menu-compras .lista-compras li #box-li img {
-    width: 80px;
-    height: 60px;
-    border-radius: 8px 10% 10% 8px;
-    border-right: 2px solid black;
-}
-
-header .kart #menu-compras .lista-compras li #box-li p {
-    font-size: 1.2em;
-    font-weight: bold;
-    font-family: "Poetsen One", sans-serif;
-}
-
-header .kart #menu-compras .lista-compras li #check {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#check *,input[type="checkbox"] {
-    cursor: pointer;
-    height: 20px;
-    width: 20px;
-}
-
-#remover-itens, #comprar-itens, #marcar-checks {
-    cursor: pointer;
-}*/
-
 header .kart #menu-compras .lista-compras li {
     width: 80%;
-    /* margin: 0 20px 0 20px; */
     height: 80px;
     display: flex;
     align-items: center;
@@ -196,12 +142,6 @@ header .kart #menu-compras .lista-compras li #check {
     float: right;
 }
 
-/*#check *,input[type="checkbox"] {
-    cursor: pointer;
-    height: 20px;
-    width: 20px;
-}*/
-
 .color {
     float: right;
     cursor: pointer;
@@ -231,13 +171,11 @@ header .kart #menu-compras .lista-compras li #check {
 .msg-info.green {
     opacity: 1;
     background-color: rgb(139, 216, 139);
-    /* transition: all 1s ease; */
 }
 
 .msg-info.red {
     opacity: 1;
     background-color: rgb(189, 100, 100);
-    /* transition: all 1s ease; */
 }
 
 
@@ -266,10 +204,6 @@ header .kart #menu-compras .lista-compras li #check {
 /* CATÁLOGO DE COMPRAS */
 
 main {
-    /* position: absolute;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%, -50%); */
     height: auto;
     width: 70vw;
     margin: 19vh auto 13vh auto;
@@ -288,9 +222,6 @@ main {
     text-shadow: 0 0 1px black;
     font-size: 40px;
     font-family: "Poetsen One", sans-serif;
-    /* background: linear-gradient(to right, black, yellow);
-    color: transparent;
-    background-clip: text; */
     font-weight: bold;
     text-align: center;
 }
@@ -299,10 +230,6 @@ main #box-ul {
     height: 85vh;
     min-width: 55vw;
     overflow: hidden;
-    /* background-color: red; */
-    /* display: flex;
-    justify-content: flex-start;
-    gap: 5vw; */
     position: relative;
 }
 
@@ -502,8 +429,6 @@ main #box-ul ul li #options button {
     align-items: center;
     justify-content: center;
     gap: 2.5vw;
-    /* gap: 2vw; */
-    /* padding: .5vh 2vw; */
     height: 40px;
     width: 80%;
     border-radius: 9px;
@@ -794,7 +719,6 @@ footer .rodape ul li a i {
     }
 
     main #box-ul ul li {
-        /* max-width: 35vw; */
         width: 80%;
         height: 170px;
     }
@@ -896,7 +820,6 @@ footer .rodape ul li a i {
     }
 
     main #box-ul ul li #options button {
-        /* padding: 3.5vh 2vw; */
         width: 90%;
         height: 28.5px;
         justify-content: center;
@@ -930,11 +853,6 @@ footer .rodape ul li a i {
         top: 5%;
     }
 
-    /*header .kart #menu-compras {
-        height: 400px;
-        width: 400px;
-    }*/
-
     header .kart #menu-compras .lista-compras {
         gap: 1.5vh;
     }
@@ -963,10 +881,6 @@ footer .rodape ul li a i {
         font-size: 1.5em;
     }
 
-    /* main #box-ul ul {
-        gap: 15px;
-    } */
-
     main #box-ul {
         height: 72vh;
     }
@@ -985,7 +899,6 @@ footer .rodape ul li a i {
     }
 
     main #box-ul ul li #options button {
-        /* padding: 1.5vh 0; */
         width: 72%;
         height: 29px;
         justify-content: center;
