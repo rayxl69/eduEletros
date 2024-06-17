@@ -179,7 +179,7 @@ setInterval(() => {
             }
         })
     })
-}, 1000)
+}, 300)
 
 let msg_info = document.querySelector('.msg-info');
 
