@@ -607,12 +607,12 @@ footer .rodape ul li a i {
     main {
         margin-top: 15vh;
         width: 90vw;
-        gap: 1vh;
+        gap: 3vh;
     }
 
     #titulo h3 {
         font-size: 18px;
-        margin-top: 6vh;
+        margin-top: 3vh;
     }
 
     main #box-ul {
