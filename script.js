@@ -202,8 +202,11 @@ btn_remover.addEventListener('click', () => {
     })
     setTimeout(() => {
         msg_info.classList.remove('red');
-        msg_info.innerHTML = "";
+        /*msg_info.innerHTML = "";*/
     }, 1500)
+    setTimeout(() => {
+        msg_info.innerHTML = "";
+    })
     x = 0;
 })
 
