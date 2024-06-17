@@ -308,11 +308,11 @@ main #box-ul {
 
 
 main #box-ul ul {
-    top: 50%;
-    transform: translateY(-50%);
     height: auto;
     width: 100%;
     position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
     list-style: none;
     padding: 0 5vw;
     display: grid;
@@ -343,15 +343,15 @@ main #box-ul ul li #options{
 
 
 .to-right {
-    transform: translateX(100%);
+    left: 100%;
 }
 
 .to-center {
-    transform: translateX(0);
+    left: 0;
 }
 
 .to-left {
-    transform: translateX(-100%);
+    left: -100%;
 }
 
 .from-right {
