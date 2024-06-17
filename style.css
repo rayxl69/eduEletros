@@ -308,6 +308,8 @@ main #box-ul {
 
 
 main #box-ul ul {
+    top: 50%;
+    transform: translateY(-50%);
     height: auto;
     width: 100%;
     position: absolute;
