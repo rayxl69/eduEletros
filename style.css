@@ -11,6 +11,7 @@ body {
     height: auto;
     width: 100vw;
     overflow-x: hidden;
+    background-color: white;
 }
 
 
@@ -905,17 +906,17 @@ footer .rodape ul li a i {
 
     main {
         width: 60vw;
-        gap: 4vh;
+        gap: 2vh;
         margin-top: 16.5vh;
     }
 
     #titulo h3 {
-        font-size: 1.5em;
+        font-size: 2em;
         margin-top: 4vh;
     }
 
     main #box-ul {
-        height: 72vh;
+        height: 65vh;
     }
 
     main #box-ul ul li {
