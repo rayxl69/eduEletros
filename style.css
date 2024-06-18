@@ -945,12 +945,12 @@ footer .rodape ul li a i {
     }
 
     main #box-ul ul li #options button {
-        width: 95%;
+        width: 80%;
         /*height: 34px;*/
         padding: 2vh 3.5vw;
         justify-content: center;
         gap: 2.5vw;
-        margin-bottom: 2vh;
+        margin-bottom: .5vh;
     }
 
     main #box-ul ul li #options button p {
