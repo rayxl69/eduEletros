@@ -937,7 +937,7 @@ footer .rodape ul li a i {
 
     main #box-ul ul li {
         width: 90%;
-        min-height: 255px;
+        min-height: 275px;
     } 
 
     main #box-ul ul li #options img {
@@ -945,7 +945,7 @@ footer .rodape ul li a i {
     }
 
     main #box-ul ul li #options p {
-        font-size: 1.3em;
+        font-size: 1.5em;
     }
 
     main #box-ul ul li #options button {
@@ -960,7 +960,7 @@ footer .rodape ul li a i {
     main #box-ul ul li #options button p {
         margin: .2vh 2vw .2vh 0;
         /*margin-right: 2vw;*/
-        font-size: 12.5px;
+        font-size: 13.5px;
     }
 
     main #box-ul ul li #options button i {
