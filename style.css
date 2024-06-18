@@ -40,8 +40,7 @@ header .logo p {
 }
 
 header .kart {
-    height: 3vh;
-    width: 3vw;
+    padding: 3vh 3vw;
     position: relative;
     display: flex;
     align-items: center;
