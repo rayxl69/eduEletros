@@ -882,7 +882,7 @@ footer .rodape ul li a i {
 
     header .kart .info {
         left: 65%;
-        top: 5%;
+        top: 0;
     }
 
     header .kart #menu-compras .lista-compras {
@@ -920,7 +920,7 @@ footer .rodape ul li a i {
 
     main #box-ul ul li {
         width: 80%;
-        height: 225px;
+        min-height: 225px;
     } 
 
     main #box-ul ul li #options img {
