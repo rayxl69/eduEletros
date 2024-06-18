@@ -824,7 +824,7 @@ footer .rodape ul li a i {
     }
 
     #titulo h3 {
-        font-size: 26px;
+        font-size: 28.5px;
     }
 
     main #box-ul {
@@ -881,9 +881,21 @@ footer .rodape ul li a i {
 
 @media (min-width: 1025px) {
 
+    header .logo p {
+        font-size: 2em;
+    }
+
+    header .kart i {
+        font-size: 2em;
+    }
+
     header .kart .info {
         left: 65%;
-        top: 0;
+        top: 15%;
+    }
+
+    header .kart .info p {
+        font-size: 1.3em;
     }
 
     header .kart #menu-compras .lista-compras {
@@ -925,11 +937,11 @@ footer .rodape ul li a i {
     } 
 
     main #box-ul ul li #options img {
-        height: 85%;
+        height: 50%;
     }
 
     main #box-ul ul li #options p {
-        font-size: 13px;
+        font-size: 1.2em;
     }
 
     main #box-ul ul li #options button {
@@ -942,16 +954,20 @@ footer .rodape ul li a i {
 
     main #box-ul ul li #options button p {
         margin-right: 2vw;
-        font-size: 6.5px;
+        font-size: 12.5px;
     }
 
     main #box-ul ul li #options button i {
-        font-size: 15px;
+        font-size: 20px;
         margin-left: 2vw;
     }
 
     #directions {
         margin-bottom: 4vh;
+    }
+
+    #directions button p {
+        font-size: 2em;
     }
 
     footer .rodape ul li a i {
