@@ -776,6 +776,11 @@ footer .rodape ul li a i {
         top: 5%;
     }
 
+    
+    header .kart .info p {
+        font-size: 20px;
+    }
+
     header .kart #menu-compras {
         height: 295px;
         width: 275px;
