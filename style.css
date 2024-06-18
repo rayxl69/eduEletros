@@ -923,8 +923,12 @@ footer .rodape ul li a i {
     }
 
     #titulo h3 {
-        font-size: 2em;
+        font-size: 3em;
         margin-top: 4vh;
+    }
+
+    main {
+        width: 90vw;
     }
 
     main #box-ul {
