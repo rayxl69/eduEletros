@@ -946,8 +946,8 @@ footer .rodape ul li a i {
 
     main #box-ul ul li #options button {
         width: 80%;
-        /*height: 34px;*/
-        padding: 2vh 3.5vw;
+        height: 34px;
+        /*padding: 2vh 3.5vw;*/
         justify-content: center;
         gap: 2.5vw;
         margin-bottom: .5vh;
