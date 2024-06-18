@@ -941,24 +941,25 @@ footer .rodape ul li a i {
     }
 
     main #box-ul ul li #options p {
-        font-size: 1.2em;
+        font-size: 1.7em;
     }
 
     main #box-ul ul li #options button {
         width: 72%;
+        padding: 3vh 0;
         height: 29px;
         justify-content: center;
         gap: 2.5vw;
-        margin-bottom: 5px;
+        margin-bottom: 2vh;
     }
 
     main #box-ul ul li #options button p {
         margin-right: 2vw;
-        font-size: 12.5px;
+        font-size: 19px;
     }
 
     main #box-ul ul li #options button i {
-        font-size: 20px;
+        font-size: 27px;
         margin-left: 2vw;
     }
 
