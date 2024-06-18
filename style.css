@@ -771,6 +771,10 @@ footer .rodape ul li a i {
 
 @media (min-width: 769px) and (max-width: 1024px) {
 
+    header .kart i {
+        font-size: 27px;
+    }
+
     header .kart .info {
         left: 75%;
         top: 5%;
@@ -778,7 +782,7 @@ footer .rodape ul li a i {
 
     
     header .kart .info p {
-        font-size: 20px;
+        font-size: 21.5px;
     }
 
     header .kart #menu-compras {
