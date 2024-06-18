@@ -619,7 +619,7 @@ footer .rodape ul li a i {
     }
 
     main #box-ul {
-        min-height: 54vh;
+        height: 70%;
         width: 92vw;
     }
 
