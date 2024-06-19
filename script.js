@@ -186,6 +186,7 @@ let msg_info = document.querySelector('.msg-info');
 let btn_remover = document.querySelector('#remover-itens');
 btn_remover.addEventListener('click', () => {
     let lista_itens = document.querySelectorAll('.selected');
+    if (lista_itens.length > 0) {
     if (lista_itens.length == 1) {
         msg_info.innerHTML = "Produto Retirado!"
         msg_info.classList.add('red');
@@ -207,11 +208,13 @@ btn_remover.addEventListener('click', () => {
         msg_info.innerHTML = "";
     }, 2500)
     x = 0;
+    }
 })
 
 let btn_comprar = document.querySelector('#comprar-itens');
 btn_comprar.addEventListener('click', () => {
     let lista_itens = document.querySelectorAll('.selected');
+    if (lista_itens.length > 0) {
     if (lista_itens.length == 1) {
         msg_info.innerHTML = "Produto Comprado!"
         msg_info.classList.add('green');
@@ -233,6 +236,7 @@ btn_comprar.addEventListener('click', () => {
         msg_info.innerHTML = "";
     }, 2500)
     x = 0;
+    }
 })
 
 let btn_marcar = document.querySelector('#marcar-checks');
