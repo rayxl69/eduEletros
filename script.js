@@ -206,7 +206,7 @@ btn_remover.addEventListener('click', () => {
     }, 1500)
     setTimeout(() => {
         msg_info.innerHTML = "";
-    }, 2500)
+    }, 2000)
     x = 0;
     }
 })
@@ -234,7 +234,7 @@ btn_comprar.addEventListener('click', () => {
     }, 1500)
     setTimeout(() => {
         msg_info.innerHTML = "";
-    }, 2500)
+    }, 2000)
     x = 0;
     }
 })
