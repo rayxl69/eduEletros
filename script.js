@@ -169,11 +169,13 @@ setInterval(() => {
     chec.forEach((check) => {
         check.addEventListener('click', () => {
             if (check.checked) {
+                x = 1
                 let pai = check.parentElement;
                 pai.classList.add('selected');
             }
 
             if (!check.checked) {
+                x = 0
                 let pai = check.parentElement;
                 pai.classList.remove('selected');        
             }
